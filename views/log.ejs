@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Daria Bayram, veebiprogrammeerimine 2023</title>
+	<script src="first.js" defer></script>
+</head>
+<body>
+	<img src="banner/banner.png" alt="Veebiprogrammeerimise kursuse banner">
+	<h1> <%= h1 %> </h1>
+	<ol>
+		<% log.forEach(function(logItem){ %>
+            <li><%= logItem.first_name + ' ' + logItem.last_name + ', mis salvestati ' + logItem.date %></li>
+		<% }); %>
+	</ol> <!--ordered list-->
+	<hr>
+	<ul>
+		<li><a href="/">Avalehele</a></li>
+	</ul>
+	<hr>
+</body>
+</html>
