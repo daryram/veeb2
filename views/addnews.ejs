@@ -22,10 +22,11 @@
 		<br>
 		<textarea name="contentInput" id="contentInput" cols="80" rows="5"placeholder="Uudise tekst..." required maxlength="2000"></textarea>
 		<br>
-		<label for="expiredDateInput">Sünniaeg: </label>
+		<label for="expiredDateInput">Aegumis kuupäev: </label>
 		<input type="date" name="expiredDateInput" id="expiredDateInput" required>
 		<br>
 		<input type="submit" name="newsSubmit" value="Salvesta">
 	</form>
+	<p><%= locals.notice %></p>
 </body>
 </html>
